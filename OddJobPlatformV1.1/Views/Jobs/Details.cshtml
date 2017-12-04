@@ -1,0 +1,82 @@
+﻿@model OddJobPlatformV1._1.Models.Job
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Job</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.jobName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jobName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.jobType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.jobType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contactEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contactEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.contactNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.contactNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salary)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salary)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.expiryDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.expiryDate)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.jobId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

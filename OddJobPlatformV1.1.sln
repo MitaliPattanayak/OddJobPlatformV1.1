@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddJobPlatformV1.1", "OddJobPlatformV1.1\OddJobPlatformV1.1.csproj", "{CE800C7A-3815-471F-A568-BD898FFE6C9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddJobPlatformV1.1.Tests", "OddJobPlatformV1.1.Tests\OddJobPlatformV1.1.Tests.csproj", "{5F79ABFC-99A5-464A-BA5E-C6EABA4D6FEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OddJobPlatformv1.1.Test", "OddJobPlatformv1.1.Test\OddJobPlatformv1.1.Test.csproj", "{B5589CAF-278D-49B4-90D8-4D1511681E57}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{CE800C7A-3815-471F-A568-BD898FFE6C9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE800C7A-3815-471F-A568-BD898FFE6C9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE800C7A-3815-471F-A568-BD898FFE6C9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5F79ABFC-99A5-464A-BA5E-C6EABA4D6FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F79ABFC-99A5-464A-BA5E-C6EABA4D6FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5F79ABFC-99A5-464A-BA5E-C6EABA4D6FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F79ABFC-99A5-464A-BA5E-C6EABA4D6FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5589CAF-278D-49B4-90D8-4D1511681E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5589CAF-278D-49B4-90D8-4D1511681E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5589CAF-278D-49B4-90D8-4D1511681E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5589CAF-278D-49B4-90D8-4D1511681E57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
