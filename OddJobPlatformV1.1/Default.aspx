@@ -3,17 +3,21 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <h1 style="background-color:blue; text-align:center; color: white">Odd Job Platform</h1>
+        <p class="lead">
+An online based marketplace that matches freelance workers and students with local demand, allowing Residents or SME’s to find immediate help with their everyday tasks.
+            The platform will benefit both parties, as for the students, they won’t have to compromise their study by going to work as the hours will be flexible. The platform includes all types of work such a fulltime/part-time, voluntary, day and night shift patterns and many more. For example; a local resident might need a hand for just couple of hours for cleaning the garden, where a student might come up to help the local resident and get paid for the job.
+
+        </p>
+        <%--<p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>--%>
     </div>
 
     <div class="row">
         <div class="col-md-4">
             <h2>Getting started</h2>
             <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+               Job Provider?
+ 
             </p>
             <p>
                 <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>

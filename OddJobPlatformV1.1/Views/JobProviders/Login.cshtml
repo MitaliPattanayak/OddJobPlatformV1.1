@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+
+@model OddJobPlatformV1._1.Models.JobProvider
+
+@using (Html.BeginForm("Login", "JobProviders", FormMethod.Post))
+{
+    <table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <th colspan="3">
+                Login
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Username
+            </td>
+            <td>
+                @Html.TextBoxFor(model => model.email)
+            </td>
+            <td>
+                @Html.ValidationMessageFor(m => m.email, "", new { @class = "error" })
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password
+            </td>
+            <td>
+                @Html.PasswordFor(model => model.password)
+            </td>
+            <td>
+                @Html.ValidationMessageFor(model => model.password, "", new { @class = "error" })
+            </td>
+        </tr>
+        @*<tr>
+            <td>
+                Remember Me
+            </td>
+            <td>
+                @Html.CheckBoxFor(m => m.RememberMe)
+            </td>
+            <td></td>
+        </tr>*@
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Submit" />
+            </td>
+            <td></td>
+        </tr>
+    </table>
+}
+@Scripts.Render("~/bundles/jquery")
+@Scripts.Render("~/bundles/jqueryval")
+
+
+

@@ -44,11 +44,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.AI.Agent.Intercept, Version=2.0.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
@@ -300,6 +300,19 @@
     <Content Include="Views\Jobs\Details.cshtml" />
     <Content Include="Views\Jobs\Edit.cshtml" />
     <Content Include="Views\Jobs\Index.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\JobProviders\Create.cshtml" />
+    <Content Include="Views\JobProviders\Delete.cshtml" />
+    <Content Include="Views\JobProviders\Details.cshtml" />
+    <Content Include="Views\JobProviders\Edit.cshtml" />
+    <Content Include="Views\JobProviders\Index.cshtml" />
+    <Content Include="Views\JobProviders\Login.cshtml" />
+    <Content Include="Views\JobSeekers\Create.cshtml" />
+    <Content Include="Views\JobSeekers\Delete.cshtml" />
+    <Content Include="Views\JobSeekers\Details.cshtml" />
+    <Content Include="Views\JobSeekers\Edit.cshtml" />
+    <Content Include="Views\JobSeekers\Index.cshtml" />
+    <Content Include="Views\Jobs\ListJobs.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
@@ -432,7 +445,10 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JobProvidersController.cs" />
     <Compile Include="Controllers\JobsController.cs" />
+    <Compile Include="Controllers\JobSeekersController.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -443,8 +459,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\Application.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Job.cs" />
+    <Compile Include="Models\JobProvider.cs" />
+    <Compile Include="Models\JobSeeker.cs" />
+    <Compile Include="Models\Validators.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>

@@ -1,0 +1,75 @@
+﻿@model IEnumerable<OddJobPlatformV1._1.Models.Job>
+
+@{
+    ViewBag.Title = "ListJobs";
+}
+
+<h2>ListJobs</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.jobName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.jobType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contactEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.contactNum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.expiryDate)
+        </th>
+        @*<th></th>*@
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.jobName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.jobType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contactEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.contactNum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.expiryDate)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.jobId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.jobId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.jobId })
+        </td>*@
+    </tr>
+}
+
+</table>

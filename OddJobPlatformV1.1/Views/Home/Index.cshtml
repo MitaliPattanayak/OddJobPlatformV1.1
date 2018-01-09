@@ -1,0 +1,41 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="jumbotron">
+    <h2 style="background-color:blue; text-align:center; color: white">Odd Job Platform</h2>
+    <p class="lead">
+        An online based marketplace that matches freelance workers and students with local demand, allowing Residents or SME’s to find immediate help with their everyday tasks.
+        The platform will benefit both parties, as for the students, they won’t have to compromise their study by going to work as the hours will be flexible. The platform includes all types of work such a fulltime/part-time, voluntary, day and night shift patterns and many more. For example; a local resident might need a hand for just couple of hours for cleaning the garden, where a student might come up to help the local resident and get paid for the job.
+</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>
+            Job Provider?
+        </h2>
+        <p>
+             @Html.ActionLink("Login", "Login","JobProviders")
+        </p>
+        <p>
+            @Html.ActionLink("Register", "Create", "JobProviders") 
+        </p>
+        
+    </div>
+    <div class="col-md-4">
+        
+       
+    </div>
+    <div class="col-md-4">
+        <h2>Job Seeker?</h2>
+        <p>
+            Login  
+        </p>
+        <p>
+             @Html.ActionLink("Register", "Create", "JobSeekers")
+        </p>
+    </div>
+</div>
+
